@@ -3,7 +3,8 @@ html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #e5e7eb;
+  background: #0b0f1a;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -18,16 +19,16 @@ h2 {
   margin: 0 0 20px;
   font-weight: 800;
   font-size: 36px;
-  color: #333;
+  color: #f8fafc;
 }
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #333;
+  color: #e5e7eb;
 }
 h4 {
   font-size: 18px;
-  color: #333;
+  color: #e5e7eb;
   font-weight: 600;
 }
 h5 {
@@ -37,19 +38,20 @@ h5 {
 }
 p {
   font-size: 15px;
+  color: #cbd5e1;
 }
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
 }
 a {
-  color: #608dfd;
+  color: #a5b4fc;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #608dfd;
+  color: #c7d2fe;
 }
 ul,
 ol {
@@ -66,7 +68,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+  background: linear-gradient(to right, #4f46e5 0%, #22d3ee 100%);
   margin-bottom: 20px;
   border: 0;
 }
@@ -76,21 +78,22 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #fff;
+  background: rgba(10, 14, 25, 0.92);
   border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: #f8fafc;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: #e2e8f0;
   font-size: 15px;
   font-weight: 400;
   padding: 8px 2px;
@@ -134,11 +137,11 @@ hr {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fff;
-  border-color: #608dfd;
+  background-color: #111827;
+  border-color: #a5b4fc;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #608dfd;
+  background-color: #c7d2fe;
 }
 .section-title {
   margin-bottom: 70px;
@@ -166,8 +169,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: #0ea5e9;
+  background-image: linear-gradient(to right, #0ea5e9 0%, #4f46e5 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +187,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #4338ca;
 }
 .btn:active,
 .btn.active {
@@ -209,14 +212,14 @@ a:focus,
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
+  background-color: #0f1629;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(7, 11, 22, 0.72);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -229,7 +232,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: #38bdf8;
 }
 .intro p {
   color: #fff;
@@ -246,7 +249,7 @@ header .intro-text {
 }
 /* Features Section */
 #features {
-  background: #f6f6f6;
+  background: #0f172a;
 }
 #features i.fa {
   font-size: 38px;
@@ -257,12 +260,13 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #4f46e5 0%, #0ea5e9 100%);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
 }
 /* About Section */
 #about {
   padding: 100px 0;
+  background: #0b1221;
 }
 #about h3 {
   font-size: 22px;
@@ -276,7 +280,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #0ea5e9 0%, #4f46e5 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -291,7 +295,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #22d3ee;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -299,9 +303,9 @@ header .intro-text {
 #about img {
   width: 520px;
   margin-top: 10px;
-  background: #fff;
+  background: #0f172a;
   border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
 }
 #about p {
   line-height: 24px;
@@ -310,7 +314,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #0f172a 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -322,7 +326,7 @@ header .intro-text {
 #services .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -334,10 +338,10 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #0ea5e9 0%, #4f46e5 100%);
   border-radius: 50%;
   color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
 }
 #services h3 {
   font-weight: 500;
@@ -345,7 +349,7 @@ header .intro-text {
   color: #fff;
 }
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.8);
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -353,6 +357,7 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
+  background: #0b1221;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
@@ -370,8 +375,8 @@ header .intro-text {
   color: #fff;
   background: linear-gradient(
     to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
+    rgba(79, 70, 229, 0.85) 0%,
+    rgba(14, 165, 233, 0.85) 100%
   );
   padding: 30% 0 0;
   height: 100%;
@@ -402,10 +407,10 @@ header .intro-text {
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
-  background: #f6f6f6;
+  background: #0f172a;
 }
 #testimonials i {
-  color: #e6e6e6;
+  color: #22d3ee;
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -437,11 +442,12 @@ header .intro-text {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 600;
-  color: #666;
+  color: #cbd5e1;
 }
 /* Team Section */
 #team {
   padding: 100px 0;
+  background: #0b1221;
 }
 #team h4 {
   margin: 5px 0;
@@ -450,18 +456,18 @@ header .intro-text {
   width: 240px;
 }
 #team .thumbnail {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.02);
   border: 0;
 }
 #team .thumbnail .caption {
   padding: 10px 0 0;
-  color: #888;
+  color: #cbd5e1;
 }
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #0f172a 100%);
+  color: rgba(255, 255, 255, 0.85);
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -478,7 +484,7 @@ header .intro-text {
 #contact .section-title h2::after {
   position: absolute;
   content: "";
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -500,12 +506,12 @@ header .intro-text {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
+  background: rgba(15, 23, 42, 0.6);
+  border: 2px solid #22d3ee;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
+  color: #fff;
+  background: #0ea5e9;
 }
 label {
   font-size: 12px;
@@ -519,10 +525,10 @@ label {
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #444;
-  background-color: #fff;
+  color: #e2e8f0;
+  background-color: #0b1221;
   background-image: none;
-  border: 1px solid #ddd;
+  border: 1px solid #1f2937;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -531,22 +537,22 @@ label {
   transition: none;
 }
 #contact .form-control:focus {
-  border-color: #999;
+  border-color: #22d3ee;
   outline: 0;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-  color: #777;
+  color: #94a3b8;
 }
 .form-control:-moz-placeholder {
-  color: #777;
+  color: #94a3b8;
 }
 .form-control::-moz-placeholder {
-  color: #777;
+  color: #94a3b8;
 }
 .form-control:-ms-input-placeholder {
-  color: #777;
+  color: #94a3b8;
 }
 #contact .contact-item {
   margin: 20px 0;
@@ -580,23 +586,23 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
+  color: #0b1221;
+  background: #22d3ee;
 }
 /* Footer Section*/
 #footer {
-  background: #f6f6f6;
+  background: #0b1221;
   padding: 30px 0;
 }
 #footer p {
-  color: #888;
+  color: #cbd5e1;
   font-size: 14px;
 }
 #footer a {
-  color: #608dfd;
+  color: #a5b4fc;
 }
 #footer a:hover {
-  border-bottom: 2px solid #608dfd;
+  border-bottom: 2px solid #c7d2fe;
 }
 
 @media (max-width: 768px) {
