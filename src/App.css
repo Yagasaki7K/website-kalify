@@ -1,18 +1,31 @@
 @media screen and (max-width: 400px) {
-  #features {
-    padding: 20px;
-    width: 111%;
-  }
+  section,
+  #features,
   #about,
   #services,
   #testimonials,
   #team,
   #contact,
-  #footer {
-    width: 111%;
+  #footer,
+  #portfolio {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 18px;
   }
 
-  #portfolio {
-    width: 110%;
+  .container {
+    max-width: 1440px;
+  }
+
+  header .intro-text {
+    padding-top: 28vh;
+    padding-bottom: 18vh;
   }
 }
